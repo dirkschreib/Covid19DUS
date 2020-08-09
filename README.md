@@ -1,2 +1,11 @@
 # Covid19DUS
 Zusammenfassung der COVID-19-Zahlen in Düsseldorf
+
+Ich fasse hier die von der Stadt Düsseldorf unter dem Twitter-Account @duesseldorf verteilten Zahlen zu COVID-19 in einer übersichtlichen Grafik zusammen.
+Erfasst wurden alle Meldungen seit dem 24.03.2020.
+
+Die Aktualisierung nehme ich unregelmäßig vor, üblicherweise 1-2x pro Woche.
+
+Die aktuelle Grafik:
+
+![Aktuelle COVID-19-Zahlen für Düsseldorf](https://github.com/dirkschreib/Covid19DUS/blob/master/Covid19DUS.png)
