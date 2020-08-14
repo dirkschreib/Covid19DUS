@@ -9,3 +9,6 @@ Die Aktualisierung nehme ich unregelmäßig vor, üblicherweise 1-2x pro Woche.
 Die aktuelle Grafik:
 
 ![Aktuelle COVID-19-Zahlen für Düsseldorf](https://github.com/dirkschreib/Covid19DUS/blob/master/Covid19DUS.png)
+
+Veränderungen:
+- Die vertikale Achse wurde auf den Bereich (-50, 600) erweitert. (14.08.2020)
