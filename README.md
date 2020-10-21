@@ -16,4 +16,7 @@ Veränderungen:
 
   Für die Darstellung der Qurantänezahlen wurde eine separate Grafik erzeugt:  
 ![Aktuelle COVID-19-Zahlen für Düsseldorf](https://github.com/dirkschreib/Covid19DUS/blob/master/Covid19DUS_Q.png)
-- In der Standard Grafik wird ab heute die Inzidenz statt der Quarantäne-Anzahl angezeigt (rechte Skala) 
+- In der Standard Grafik wird ab heute die Inzidenz statt der Quarantäne-Anzahl angezeigt (rechte Skala) (12.10.2020)
+- Zur Vereinfachung und auf besonderen Wunsch von @AnalysenD gibt es eine Grafik ohne die Anzahl der Todesfälle und Genesenen (19.10.2020)
+![Aktuelle COVID-19-Zahlen für Düsseldorf](https://github.com/dirkschreib/Covid19DUS/blob/master/Covid19DUS_D.png)
+- Die Skalierung wurde angepasst (21.10.2020)
