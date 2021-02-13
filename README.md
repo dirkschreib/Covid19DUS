@@ -2,14 +2,6 @@
 
 Zusammenfassung der COVID-19-Zahlen in Düsseldorf
 
-Aktualisierung vom 07.02.2021:
-Die Stadt Düsseldorf hat am 03.02.2021 angekündigt:
-"Die LH Düsseldorf veröffentlicht ab jetzt automatisiert die Zahlen vom Dashboard des RKI sowie des Landeszentrum Gesundheit NRW und weiterhin eigens eingepflegte Daten auf dem Corona-Portal unter corona.duesseldorf.de/zahlen-fakten."
-
-Open Data Düsseldorf hat am 05.02.2021 angekündigt: "Zur Vereinheitlichung der Coronazahlen der Stadt Düsseldorf, wird auch das Opendata Team zukünftig aud die Zahlen des RKI zurückgreifen. Es werden bis zur erfolgreichen Umstellung daher keine weiteren Coronazahlen auf unserem Portal veröffentlicht."
-
-D.h. für mich, dass ich solange nicht auf meine bisherige Datenquellen setzen kann, sonder auch auf die Daten des RKI angewiesen bin.
-
 Quellen:
 - Twitter-Account @duesseldorf
 - Landeshauptstadt Düsseldorf – opendata.duesseldorf.de
@@ -21,10 +13,22 @@ Einzelne fehlende oder fehlerhafte Datensätze können dabei interpoliert werden
 
 Die Aktualisierung nehme ich unregelmäßig vor, meistens täglich.
 
+Aktualisierung vom 07.02.2021:
+Die Stadt Düsseldorf hat am 03.02.2021 angekündigt:
+"Die LH Düsseldorf veröffentlicht ab jetzt automatisiert die Zahlen vom Dashboard des RKI sowie des Landeszentrum Gesundheit NRW und weiterhin eigens eingepflegte Daten auf dem Corona-Portal unter corona.duesseldorf.de/zahlen-fakten."
+
+Open Data Düsseldorf hat am 05.02.2021 angekündigt: "Zur Vereinheitlichung der Coronazahlen der Stadt Düsseldorf, wird auch das Opendata Team zukünftig aud die Zahlen des RKI zurückgreifen. Es werden bis zur erfolgreichen Umstellung daher keine weiteren Coronazahlen auf unserem Portal veröffentlicht."
+
+D.h. für mich, dass ich solange nicht auf meine bisherige Datenquellen setzen kann, sonder auch auf die Daten des RKI angewiesen bin.
+
+Wie bin ich mit dem Datenübergang umgegangen?
+- Für die Einwohnerzahl wurde auf die Zahl des RKI (und damit destatis) umgestellt. Jetzt wird mit 621.877 Einwohnern gerechnet. Vorher mit 645.923 nach den Zahlen der Stadt Düsseldorf. Dies wirkt sich auf die Inzidenz-Berechnung auf den gesamten Zeitraum aus.
+- Die Zahlen für die Gesamtfälle wurden rückwirkend zum 20.01.2021 auf die RKI-Zahlen umgestellt. D.h die Inzidenzwerte bis zum 19.01.2021 basieren auf den Daten der Stadt Düsseldorf, ab dem 27.01.2021 entsprechen sie den Zahlen des RKI.
+- Die Daten für die Krankenhausbelegung (intensiv, nicht-intensiv) und die Quarantäne-Zahlen übernehme ich aus den Datan von Open Data Düsseldorf.
+
 Die aktuelle Grafik:
 
 ![Aktuelle COVID-19-Zahlen für Düsseldorf](https://github.com/dirkschreib/Covid19DUS/blob/main/Covid19DUS_n.png)
-
 
 Technische Anmerkungen:
 
@@ -32,7 +36,7 @@ Die aktuellen Daten des RKI werden mit folgenden Befehlen geladen und konvertier
 ```bash
 curl "https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_COVID19/FeatureServer/0/query?where=Landkreis%20%3D%20%27SK%20DÜSSELDORF%27&outFields=Altersgruppe,Geschlecht,AnzahlFall,AnzahlTodesfall,ObjectId,Meldedatum,Datenstand,NeuerFall,NeuerTodesfall,Refdatum,NeuGenesen,AnzahlGenesen,IstErkrankungsbeginn&returnGeometry=false&orderByFields=Meldedatum%20DESC&outSR=4326&f=json" >rki.json
 
-jq -r '[.features[].attributes] | .[].Meldedatum |= (. / 1000 | strftime("%Y-%m-%d"))|.[].Refdatum |= (. / 1000 | strftime("%Y-%m-%d")) | .[].Datenstand |= (. | strptime("%d.%m.%Y, %H:%M Uhr") | mktime | strftime("%Y-%m-%d")) | (map(keys) | add | unique) as $cols | map(. as $row | $cols | map($row[.])) as $rows | $cols, $rows[] | @csv' <rki.json >rki.csv
+jq -r '[.features[].attributes] | .[].Meldedatum |= (. / 1000 | strftime("%Y-%m-%d"))|.[].Refdatum |= (. / 1000 | strftime("%Y-%m-%d")) | .[].Datenstand |= (. | strptime("%d.%m.%Y, %H:%M Uhr") | mktime | strftime("%Y-%m-%d")) | (map(keys) | add | unique) as $cols | map(. as $row | $cols | map($row[.])) as $rows | $cols, $rows[] | @tsv' <rki.json >rki.tsv
 ```
 
 Veränderungen:
