@@ -24,7 +24,7 @@ D.h. für mich, dass ich solange nicht auf meine bisherige Datenquellen setzen k
 Wie bin ich mit dem Datenübergang umgegangen?
 - Für die Einwohnerzahl wurde auf die Zahl des RKI (und damit destatis) umgestellt. Jetzt wird mit 621.877 Einwohnern gerechnet. Vorher mit 645.923 nach den Zahlen der Stadt Düsseldorf. Dies wirkt sich auf die Inzidenz-Berechnung auf den gesamten Zeitraum aus.
 - Die Zahlen für die Gesamtfälle wurden rückwirkend zum 20.01.2021 auf die RKI-Zahlen umgestellt. D.h die Inzidenzwerte bis zum 19.01.2021 basieren auf den Daten der Stadt Düsseldorf, ab dem 27.01.2021 entsprechen sie den Zahlen des RKI.
-- Die Daten für die Krankenhausbelegung (intensiv, nicht-intensiv) und die Quarantäne-Zahlen übernehme ich aus den Datan von Open Data Düsseldorf.
+- Die Daten für die Krankenhausbelegung (intensiv, nicht-intensiv) und die Quarantäne-Zahlen übernehme ich aus den Daten von Open Data Düsseldorf.
 
 Die aktuelle Grafik:
 
