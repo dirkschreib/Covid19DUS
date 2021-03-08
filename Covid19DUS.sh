@@ -4,3 +4,5 @@
 
 
 jq -r '[.features[].attributes] | .[].Meldedatum |= (. / 1000 | strftime("%Y-%m-%d"))|.[].Refdatum |= (. / 1000 | strftime("%Y-%m-%d")) | .[].Datenstand |= (. | strptime("%d.%m.%Y, %H:%M Uhr") | mktime | strftime("%Y-%m-%d")) | (map(keys) | add | unique) as $cols | map(. as $row | $cols | map($row[.])) as $rows | $cols, $rows[] | @tsv' <rki.json >rki.tsv
+
+cp rki.tsv "rki_$(date +%Y-%m-%d).tsv"
