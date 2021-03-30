@@ -30,7 +30,7 @@ Die aktuelle Grafik:
 ![Aktuelle COVID-19-Zahlen für Düsseldorf](https://github.com/dirkschreib/Covid19DUS/blob/main/Covid19DUS_n.png)
 
 Veränderungen:
-- 21.03.2021: Ausbau der direkte RKI-Daten und Umstellung auf Daten von OpenDataDüsseldorf
+- 21.03.2021: Ausbau der RKI-Daten und Umstellung auf Daten von OpenDataDüsseldorf
 - 07.02.2021: Notwendige komplette Umstellung der Datenbeschaffung auf RKI-Daten. Dies wird sich wahrscheinlich wieder ändern, sobald das Opendata Team für Düsseldorf Zahlen veröffentlicht
 - 04.11.2020: Die bisherigen Grafiken werden nicht mehr automatisch generiert. Sie bleiben vorerst im Excel-Sheet erhalten.
 - 04.11.2020: Die neue Grafik verzichtet auf die Darstellung der aktiven Fälle, zeigt dafür die täglichen Neu-Infektionen (bzw. bestätigte Fälle) und die Inzidenz an. Dadurch können alle Werte mit der gleichen Skala angezeigt werden. Speziell für Düsseldorf gilt, dass die Inzidenz nahe am gleitenden 7-Tage-Durchschnitt liegt (Faktor 7/6.45923).
