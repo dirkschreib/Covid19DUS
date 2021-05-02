@@ -5,7 +5,8 @@ Zusammenfassung der COVID-19-Zahlen in Düsseldorf
 Quellen:
 - Twitter-Account @duesseldorf
 - Landeshauptstadt Düsseldorf – opendata.duesseldorf.de
-- ab 07.02.2021): Robert Koch-Institut (RKI), dl-de/by-2-0, ab 21.03.2021 rückwirkend wieder entfernt
+- ab 07.02.2021: Robert Koch-Institut (RKI), dl-de/by-2-0, ab 21.03.2021 rückwirkend wieder entfernt
+- ab 01.05.2021: Robert Koch-Institut (RKI), dl-de/by-2-0, für die Daten am Wochenende wieder aufgenommen
 
 Ich fasse hier die von der Stadt Düsseldorf unter dem Twitter-Account @duesseldorf verteilten Zahlen zu COVID-19 in einer übersichtlichen Grafik zusammen.
 Erfasst wurden alle Meldungen seit dem 24.03.2020. Seit dem 03.11.2020 werden auch Daten vom OpenDataDüsseldorf genutzt. 
@@ -30,6 +31,7 @@ Die aktuelle Grafik:
 ![Aktuelle COVID-19-Zahlen für Düsseldorf](https://github.com/dirkschreib/Covid19DUS/blob/main/Covid19DUS_n.png)
 
 Veränderungen:
+- 01.05.2021: Nutzung der RKI-Daten an den Wochenenden (ohne Krankenhaus/Quarantäne-Zahlen)
 - 21.03.2021: Ausbau der RKI-Daten und Umstellung auf Daten von OpenDataDüsseldorf
 - 07.02.2021: Notwendige komplette Umstellung der Datenbeschaffung auf RKI-Daten. Dies wird sich wahrscheinlich wieder ändern, sobald das Opendata Team für Düsseldorf Zahlen veröffentlicht
 - 04.11.2020: Die bisherigen Grafiken werden nicht mehr automatisch generiert. Sie bleiben vorerst im Excel-Sheet erhalten.
