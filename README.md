@@ -2,6 +2,10 @@
 
 Zusammenfassung der COVID-19-Zahlen in Düsseldorf
 
+Die aktuelle Grafik:
+
+![Aktuelle COVID-19-Zahlen für Düsseldorf](https://github.com/dirkschreib/Covid19DUS/blob/main/Covid19DUS_n.png)
+
 Quellen:
 - Twitter-Account @duesseldorf
 - Landeshauptstadt Düsseldorf – opendata.duesseldorf.de
@@ -26,11 +30,8 @@ Wie bin ich mit dem Datenübergang umgegangen?
 - Für die Einwohnerzahl wurde auf die Zahl des RKI (und damit destatis) umgestellt. Jetzt wird mit 621.877 Einwohnern gerechnet. Vorher mit 645.923 nach den Zahlen der Stadt Düsseldorf. Dies wirkt sich auf die Inzidenz-Berechnung auf den gesamten Zeitraum aus.
 - Alle Daten werden 1:1 aus den Zahlen von OpenDataDüsseldorf übernommen. Das führt an dem Übergangstag zu negativen Werten.
 
-Die aktuelle Grafik:
-
-![Aktuelle COVID-19-Zahlen für Düsseldorf](https://github.com/dirkschreib/Covid19DUS/blob/main/Covid19DUS_n.png)
-
 Veränderungen:
+- 26/27.07.2021: Änderung der Grafik s.o.
 - 01.05.2021: Nutzung der RKI-Daten an den Wochenenden (ohne Krankenhaus/Quarantäne-Zahlen)
 - 21.03.2021: Ausbau der RKI-Daten und Umstellung auf Daten von OpenDataDüsseldorf
 - 07.02.2021: Notwendige komplette Umstellung der Datenbeschaffung auf RKI-Daten. Dies wird sich wahrscheinlich wieder ändern, sobald das Opendata Team für Düsseldorf Zahlen veröffentlicht
