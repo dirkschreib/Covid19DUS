@@ -30,6 +30,9 @@ Wie bin ich mit dem Datenübergang umgegangen?
 - Für die Einwohnerzahl wurde auf die Zahl des RKI (und damit destatis) umgestellt. Jetzt wird mit 621.877 Einwohnern gerechnet. Vorher mit 645.923 nach den Zahlen der Stadt Düsseldorf. Dies wirkt sich auf die Inzidenz-Berechnung auf den gesamten Zeitraum aus.
 - Alle Daten werden 1:1 aus den Zahlen von OpenDataDüsseldorf übernommen. Das führt an dem Übergangstag zu negativen Werten.
 
+Änderungen der Grafik am 26/27.07.2021:
+Nach langer Zeit habe ich mich entschieden die Grafik anzupassen. Statt der absoluten Zahl der Gesamt-Todesfälle wird jetzt der aktuelle Tageswert je 1 Millionen Einwohner in einem gleitenden 7-Tage-Durchschnitt angezeigt. Dieser Wert ist vergleichbar mit entsprechenden Diagrammen von z.B. OurWorldInData. Für den Wert gilt die linke Skala, alle anderen Werte nutzen die rechte Skala. Zudem habe ich den Tageswert der "bestätigten Fälle (neu)" aus der Grafik entfernt.
+
 Veränderungen:
 - 26/27.07.2021: Änderung der Grafik s.o.
 - 01.05.2021: Nutzung der RKI-Daten an den Wochenenden (ohne Krankenhaus/Quarantäne-Zahlen)
