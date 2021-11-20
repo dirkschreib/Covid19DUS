@@ -34,6 +34,9 @@ Wie bin ich mit dem Datenübergang umgegangen?
 Nach langer Zeit habe ich mich entschieden die Grafik anzupassen. Statt der absoluten Zahl der Gesamt-Todesfälle wird jetzt der aktuelle Tageswert je 1 Millionen Einwohner in einem gleitenden 7-Tage-Durchschnitt angezeigt. Dieser Wert ist vergleichbar mit entsprechenden Diagrammen von z.B. OurWorldInData. Für den Wert gilt die linke Skala, alle anderen Werte nutzen die rechte Skala. Zudem habe ich den Tageswert der "bestätigten Fälle (neu)" aus der Grafik entfernt.
 
 Veränderungen:
+- 17.11.2021: Die Kurve der Todesfälle wurde auf absolute 7-Tageswerte umgestellt und wird nicht mehr relativ zu der Einwohnerzahl ausgegeben
+- 17.11.2021: Die Farbskala für die Inzidenz wurde angepasst, da die alten Grenzwerte (insb. 165 keine Bedeutung mehr haben)
+- 17.11.2021: Alle Delta-Angaben beziehen sich jetzt auf die Vorwoche und nicht auf den Vortag
 - 26/27.07.2021: Änderung der Grafik s.o.
 - 01.05.2021: Nutzung der RKI-Daten an den Wochenenden (ohne Krankenhaus/Quarantäne-Zahlen)
 - 21.03.2021: Ausbau der RKI-Daten und Umstellung auf Daten von OpenDataDüsseldorf
