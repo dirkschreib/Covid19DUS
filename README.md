@@ -16,7 +16,7 @@ Ich fasse hier die von der Stadt Düsseldorf unter dem Twitter-Account @duesseld
 Erfasst wurden alle Meldungen seit dem 24.03.2020. Seit dem 03.11.2020 werden auch Daten vom OpenDataDüsseldorf genutzt. 
 Einzelne fehlende oder fehlerhafte Datensätze können dabei interpoliert werden.  
 
-Die Aktualisierung nehme ich unregelmäßig vor, meistens täglich.
+Die Aktualisierung nehme ich unregelmäßig vor, ~~meistens täglich~~ mittlerweile eher alle ein bis zwei Wochen.
 
 Aktualisierung vom 07.02.2021:
 Die Stadt Düsseldorf hat am 03.02.2021 angekündigt:
